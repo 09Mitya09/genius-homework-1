@@ -81,45 +81,43 @@
         class="section-title reincarnation-section"
         id="reincarnation-section"
       >
-        <div class="container">
-          <div class="container-reincarnate">
-            <div class="reincarnate-content">
-              <h2 class="reincarnate-zone">
-                Перевтілюйтесь в
-                <span class="title-blue title-tranform" lang="en"
-                  >beauty zone!</span
+        <div class="container container-reincarnate">
+          <div class="reincarnate-content">
+            <h2 class="reincarnate-zone">
+              Перевтілюйтесь в
+              <span class="title-blue title-tranform" lang="en"
+                >beauty zone!</span
+              >
+            </h2>
+            <div class="second-item">
+              <h3 class="second-text">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </h3>
+            </div>
+            <div class="second-item">
+              <h3 class="second-text">
+                B
+                <span class="title-tranform transform-text" lang="en"
+                  >beauty zone</span
                 >
-              </h2>
-              <div class="second-item">
-                <h3 class="second-text">
-                  Наша косметологічна клініка пропонує вам професійні послуги з
-                  догляду за шкірою обличчя та тіла.
-                </h3>
-              </div>
-              <div class="second-item">
-                <h3 class="second-text">
-                  B
-                  <span class="title-tranform transform-text" lang="en"
-                    >beauty zone</span
-                  >
-                  ми гарантуємо найвищі стандарти якості та приємний сервіс.
-                  Наші косметологічні процедури та препарати допоможуть вам
-                  підтримувати свою красу та молодість. З нами краса назавжди!
-                </h3>
-              </div>
+                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+                косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. З нами краса назавжди!
+              </h3>
             </div>
-            <div class="reincarnate-images">
-              <img
-                class="photo-fece"
-                src="./images/do.jpg"
-                alt="До відновлення"
-              />
-              <img
-                class="photo-fece photo-posle"
-                src="./images/pislya.jpg"
-                alt="Після відновлення"
-              />
-            </div>
+          </div>
+          <div class="reincarnate-images">
+            <img
+              class="photo-fece"
+              src="./images/do.jpg"
+              alt="До відновлення"
+            />
+            <img
+              class="photo-fece photo-posle"
+              src="./images/pislya.jpg"
+              alt="Після відновлення"
+            />
           </div>
         </div>
       </section>
@@ -193,6 +191,9 @@
       </div>
       <section class="section-title contact-section" id="contact-section">
         <div class="container">
+          <h2 class="maps-title">
+            Як нас <span class="title-blue">знайти</span>
+          </h2>
           <div class="contakt-conteiner">
             <iframe
               class="contakt-map"
@@ -203,30 +204,60 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="contakt-forma">
-              <h2 class="maps-title">
-                Як нас <span class="title-blue">знайти</span>
-              </h2>
-              <h3 class="info-text-free">
-                Запишіться <span class="title-blue">безкоштовно</span> та
-                отримайте подарунок
-              </h3>
-              <button class="info-text" type="button">
-                Ваше ім'я та прізвище
-              </button>
-              <button class="info-text" type="button">
-                Ваш номер телефону
-              </button>
-              <button class="info-text" type="button">
-                Ваша електрона пошта
-              </button>
-
-              <button class="button" type="button">
-                Записатись безкоштовно
-              </button>
-              <p class="consent-text">
-                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
-              </p>
+            <div class="contack-gradient">
+              <div class="contakt-forma">
+                <h3 class="info-text-free">
+                  Запишіться <span class="title-blue">безкоштовно</span> та
+                  отримайте подарунок
+                </h3>
+                <form name="contact-form " autocomplete="off">
+                  <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-name"
+                      >Ваше ім'я та прізвище</label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      placeholder="Ваше ім'я та прізвище"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-tel"
+                      >Ваш номер телефону</label
+                    >
+                    <input
+                      class="form-input"
+                      type="tel"
+                      name="user-tel"
+                      id="user-tel"
+                      placeholder="Ваш номер телефону"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-email"
+                      >Ваша електронна пошта</label
+                    >
+                    <input
+                      class="form-input"
+                      type="emailt"
+                      name="user-email"
+                      id="user-email"
+                      placeholder="Ваша електронна пошт "
+                    />
+                  </div>
+                  <button class="button form-button" type="submit">
+                    Замовити дзвінок
+                  </button>
+                  <p class="form-terms">
+                    Натискаючи на кнопку я погоджуюсь
+                    <a class="form-link" href="#">
+                      з політикою конфіденційності</a
+                    >
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -313,9 +344,59 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <h3 class="info-text-free">
+          Запишіться <span class="title-blue">безкоштовно</span> та отримайте
+          подарунок
+        </h3>
+        <form name="modal-form " autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Ваше ім'я та прізвище</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ваше ім'я та прізвище"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Ваш номер телефону</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Ваш номер телефону"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Ваша електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type="emailt"
+              name="user-email"
+              id="user-email"
+              placeholder="Ваша електронна пошт "
+            />
+          </div>
+          <button class="button form-button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-link" href="#"> з політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
 
