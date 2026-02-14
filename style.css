@@ -76,15 +76,16 @@ display: inline-block;
 /* Container  */
 .container{
 width:100% ; 
-max-width: 1239px;
+max-width: 1288px;
 margin: 0 auto;
-padding:0 100px ;
+padding:0 24px ;
 }
 
 .formats-coneiner{
 display: flex;
 gap: 32px;
 align-items: center;
+justify-content: space-between;
 
 }
 /* choose */
@@ -98,6 +99,7 @@ justify-content: space-between;
 align-items: flex-start;
 gap: 32px;
 margin-bottom: 176px;
+pading
 }
 .reincarnate-images{
 display: flex;
@@ -145,8 +147,7 @@ transform: scale(1.05);
 }
 .three-card {
 display: flex;
-height: 456px 344px;
-flex-basis: calc(100%-111px / 3);
+justify-content: center;
 gap: 56px;
 }
 /* Header */
@@ -243,9 +244,7 @@ line-height: calc(100%/18);
 }
 /* hero */
 .hero-section {
-background-image: url('./images/hero-fons.jpg'); 
-/* background-image: url(./images/hero-img.png); */
-background-image: url(./images/Vector.png);
+background-image: url(./images/Gradient.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: scroll;
@@ -268,7 +267,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 48px 80px;
-max-width: 1440px;
+/* max-width: 1440px; */
 margin: 0 auto;
 margin-bottom: -30px;
 }
@@ -338,6 +337,7 @@ background-color: var(--color-primary-light);
 font-size: 18px;
 line-height: 1.3;
 font-weight: 400;
+width: 316px;
 height: 181px;
 border: 1px solid var(--color-primary-light);
 border-radius: 32px;
@@ -384,7 +384,7 @@ margin-bottom: 48px;
 color: var(--color-primary-dark);
 }
 .info-text-free {
-line-height: 2.2;
+line-height: 1.3;
 color: var(--color-primary-light);
  margin: 0 auto; 
 max-width: 300px;
@@ -399,7 +399,7 @@ text-align: center;
     border: 1px solid var(--consent-color);
     font-size: 18px;
     font-weight: 600;
-    line-height: calc(100%/13);
+    line-height:1.3;
     width: 310px;
     height: 52px;
     top: 20px;
@@ -416,7 +416,7 @@ border: 1px solid var(--consent-color);
 font-size: 18px;
 font-weight: 600;
 border-radius: 32px;
-line-height: calc(100%/13);
+line-height: 1.3;
 width: 310px;
 height: 52px;
 top: 20px;
@@ -424,17 +424,20 @@ left: 20px;
 opacity: 1;
 font-size: 18px;}
 /* .contakt-forma {
-color: var(--color-primary-light);
-font-size: 16px;
-line-height: calc(100%/16);
-font-weight: 400;
-text-decoration: none;
-font-style: normal;
-}
-.contakt-forma:hover {
-    color: var(--brend-color);
-} */
-
+position: relative;
+    max-width: 482px;
+    width: 100%;
+    max-height: 422px;
+    height: 100%;
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+    border-radius: 48px;
+    background-image: url(./images/background-modal.png);
+    padding-top: 44px;
+    padding-left: 144px;
+    padding-right: 144px;
+    overflow-y: auto;
+}  */
 .contakt-conteiner{
 display: flex;
 gap: 32px;
@@ -444,7 +447,7 @@ flex-shrink: 0;
 border: 0;
 border-radius: 16px;
 }
-/* .contakt-forma{
+ /* .contakt-forma{
 display: flex;
 position: relative;  
 max-width: 423px;
@@ -459,26 +462,30 @@ padding-top: 44px;
 padding-left: 144px;
 padding-right: 144px; 
  overflow-y: auto  
-}
+}*/
 .contack-gradient{
-top: 48px;
-left: 32px;
-right: 205px;
-bottom: 93; 
-background-color: rgba(0, 0, 0, 0.5);
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px 0;
-} */
-.contakt-forma{
+position: relative;
+    max-width: 422px;
+    width: 100%;
+    max-height: 482px;
+    height: 100%;
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+    border-radius: 48px;
+    background-image: url(./images/background-modal.png);
+    padding-top: 44px;
+    padding-left: 144px;
+    padding-right: 144px;
+    overflow-y: auto;
+}  
+/* .contakt-forma{
 max-width: 422px;
 width: 100%;
 max-height: 482px;
 height: 100%;
 opacity: 1;
 background-color: var(--color-primary-dark);
-}
+} */
 
 /* FOOTER */
 footer{
@@ -581,6 +588,21 @@ padding-left: 144px;
 padding-right: 144px; 
 overflow-y: auto;
 }
+/* .modal-form {
+    position: relative;
+    max-width: 723px;
+    width: 100%;
+    max-height: 681px;
+    height: 100%;
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+    border-radius: 48px;
+    background-image: url(./images/background-modal.png);
+    padding-top: 44px;
+    padding-left: 144px;
+    padding-right: 144px;
+    overflow-y: auto;
+}  */
 .modal-btn-close{
 position: absolute;
 top: 42px;
@@ -596,6 +618,7 @@ display: block;
 .form-input{
 color: var(--color-primary-light);
 padding: 18px 32.85px;
+max-width: 310px;
 width: 100%;
 font-size: 13px;
 line-height: 1.3;
