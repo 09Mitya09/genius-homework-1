@@ -99,7 +99,6 @@ justify-content: space-between;
 align-items: flex-start;
 gap: 32px;
 margin-bottom: 176px;
-pading
 }
 .reincarnate-images{
 display: flex;
@@ -143,7 +142,7 @@ transform: scale(1.05);
     gap: 16px;
 }
 .formats-card{
-    flex-basis: calc(100%-32px / 3);
+flex-basis: calc(100%-32px / 3);
 }
 .three-card {
 display: flex;
@@ -191,8 +190,7 @@ padding:16px 32px;
 color:var(--color-primary-light);
 background-color: var(--brend-color);
 border-radius: 32px;
-border: 2px solid var(--brend-color);
-font-size: 18px; 
+border: 2px solid var(--brend-color); 
 font-weight:600;
 cursor: pointer;
 }
@@ -201,8 +199,23 @@ color: var(--color-primary-dark);
 background-color:transparent ;
 border-radius: 32px;
 border: 2px solid var(--brend-color);
-font-size: 18px;
-font-weight: 600;
+}
+.button-modal {
+    padding: 16px 32px;
+    color: var(--color-primary-light);
+    background-color: var(--brend-color);
+    border-radius: 32px;
+    border: 2px solid var(--brend-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-modal:hover {
+    color: var(--color-primary-light);
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--brend-color);
+    font-weight: 600;
 }
 /* Carusel */
 .carusel-button{
@@ -248,6 +261,7 @@ background-image: url(./images/Gradient.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: scroll;
+padding: 126px 0;
 }
 .hero-title {
 display: flex;
@@ -267,7 +281,6 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 48px 80px;
-/* max-width: 1440px; */
 margin: 0 auto;
 margin-bottom: -30px;
 }
@@ -391,6 +404,7 @@ max-width: 300px;
 font-weight: 600;
 font-size: 22px;
 text-align: center;
+margin-bottom: 32px;
 }
 .info-text {
     color: var(--color-primary-light);
@@ -473,10 +487,8 @@ position: relative;
     background-color: var(--color-primary-dark);
     border-radius: 48px;
     background-image: url(./images/background-modal.png);
-    padding-top: 44px;
-    padding-left: 144px;
-    padding-right: 144px;
     overflow-y: auto;
+    padding: 48px 57px;
 }  
 /* .contakt-forma{
 max-width: 422px;
@@ -565,7 +577,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 20px 0;
-
 transition: opacity 0.3s,visibility 0.3s; 
 }
 .backdrop.is-hidden {
@@ -583,33 +594,27 @@ color: var(--color-primary-light);
 background-color:var(--color-primary-dark); 
 border-radius: 48px;
 background-image: url(./images/background-modal.png);
-padding-top: 44px;
-padding-left: 144px;
-padding-right: 144px; 
+padding:4px 144px;
 overflow-y: auto;
 }
-/* .modal-form {
-    position: relative;
-    max-width: 723px;
-    width: 100%;
-    max-height: 681px;
-    height: 100%;
-    color: var(--color-primary-light);
-    background-color: var(--color-primary-dark);
-    border-radius: 48px;
-    background-image: url(./images/background-modal.png);
-    padding-top: 44px;
-    padding-left: 144px;
-    padding-right: 144px;
-    overflow-y: auto;
-}  */
 .modal-btn-close{
 position: absolute;
 top: 42px;
 right: 42px;
 }
 /* Forma */
+.title-modal{
+text-align: center;
+font-weight: 700;
+font-size: 64px;
+margin-bottom: 40px;
+}
 .form-field{
+margin-bottom: 16px;
+}
+.form-field-modal{
+display: flex;
+justify-content: center;
 margin-bottom: 24px;
 }
 .form-label {
@@ -625,6 +630,7 @@ line-height: 1.3;
 border: 1px solid var(--consent-color);
 border-radius: 16px;
 background-color: transparent;
+height: 52px;
 }
 .form-input:focus{
 background-color: var(--consent-color);
@@ -642,10 +648,10 @@ color: var(--color-primary-light);
 .form-button{
 display: block;
 margin: 0 auto ;
-line-height: 1.8;
 font-weight: 600;
-font-style: 18px;
 margin-bottom: 8px;
+width: 281px;
+height: 53px;
 }
 .form-terms{
 margin: 0 auto;
