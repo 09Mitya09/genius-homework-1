@@ -92,6 +92,11 @@ justify-content: space-between;
 .choose-section{
 margin-bottom: 96px;
 }
+.icom-procedure{
+fill: var(--brend-color);
+gap: 8px;
+margin-top: 26px;
+}
 /* Conteiner reincarnate*/
 .container-reincarnate{
 display: flex;
@@ -116,6 +121,26 @@ align-self: flex-end;
 .reincarnate-content{
 width: 709px;
 height: 456px;
+}
+.recornate-star{
+position: relative;
+}
+.icom-recornate-van{
+position: absolute;
+top: 90px;
+left: 16px;
+fill: var(--brend-color);
+}
+.icom-recornate-tu {
+position: absolute;
+top: 400px;
+right: 340px;
+fill: var(--color-primary-dark);
+}
+.icom-recornate-fre {
+position: absolute;
+top: 300px;
+fill: var(--consent-color);
 }
 /* Card-Foto */
 .photo-fece{
@@ -346,16 +371,24 @@ font-style: normal;
     font-weight: 600;
 }
 .three-text{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 background-color: var(--color-primary-light);
 font-size: 18px;
-line-height: 1.3;
 font-weight: 400;
+
 width: 316px;
-height: 181px;
+height: 181px; 
 border: 1px solid var(--color-primary-light);
 border-radius: 32px;
 box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
-
+}
+.text-icom{
+max-width: 252px;
+line-height: 1.3;
+margin-bottom: 26px;
 }
 .text-card{
 font-size: 22px;
@@ -584,7 +617,7 @@ opacity: 0;
 visibility: hidden;
 pointer-events: none;
 }
-.modal{
+.modal {
 position: relative;
 max-width:723px ;
 width:100%;
