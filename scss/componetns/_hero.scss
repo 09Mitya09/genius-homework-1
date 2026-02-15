@@ -1,0 +1,51 @@
+/* hero */
+.hero-section {
+    background-image: url(./images/Gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 126px 0;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    color: var(--brend-color);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    margin-top: 53px;
+    margin-left: 212px;
+    line-height: 0.8;
+    margin: 10px 0;
+    padding-top: 16px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 80px;
+    margin: 0 auto;
+    margin-bottom: -30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 24px; */
+}
+
+.consent-text {
+    color: var(--consent-color);
+    font-size: 12px;
+    line-height: 1.5;
+    padding-top: 14px;
+}
+
+.first-text {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 48px;
+}
