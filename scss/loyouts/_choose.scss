@@ -1,0 +1,42 @@
+.choose-section {
+    margin-bottom: 96px;
+}
+.reputation-zona {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+ .reputation-title {
+ text-align: center;
+ max-width: 445px;
+ margin: 0 auto 48px;
+ }
+.three-card {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+.three-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-primary-light);
+    font-size: 18px;
+    font-weight: 400;
+    width: 316px;
+    height: 181px;
+    border: 1px solid var(--color-primary-light);
+    border-radius: 32px;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+.icom-procedure {
+    fill: var(--brend-color);
+    gap: 8px;
+    margin-top: 26px;
+}
+.text-icom {
+    max-width: 252px;
+    line-height: 1.3;
+    margin-bottom: 26px;
+}

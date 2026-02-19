@@ -1,0 +1,115 @@
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    max-width: 723px;
+    width: 100%;
+    max-height: 681px;
+    height: 100%;
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
+    border-radius: 48px;
+    background-image: url(../images/background-modal.png);
+    padding: 4px 144px;
+    overflow-y: auto;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+}
+
+/* Forma */
+.title-modal {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
+
+.form-field-modal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input {
+    color: var(--color-primary-light);
+    padding: 18px 32.85px;
+    max-width: 310px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.3;
+    border: 1px solid var(--consent-color);
+    border-radius: 36px;
+    background-color: transparent;
+    height: 52px;
+}
+
+.form-input:focus {
+    background-color: var(--consent-color);
+    border-color: var(--consent-color);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--color-primary-light);
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-primary-light);
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    margin-bottom: 8px;
+    width: 281px;
+    height: 53px;
+}
+
+.form-terms {
+    margin: 0 auto;
+    max-width: 303px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--consent-color);
+}
+
+.form-link {
+    color: var(--consent-color);
+    text-underline-offset: 2px;
+}

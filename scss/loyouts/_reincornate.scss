@@ -1,0 +1,79 @@
+/* Conteiner reincarnate*/
+.container-reincarnate {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 176px;
+}
+
+.reincarnate-images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    width: 499px;
+}
+
+.photo-posle {
+    margin-left: 200px;
+}
+
+.second-card:nth-child(2) {
+    align-self: flex-end;
+}
+
+.reincarnate-content {
+    width: 709px;
+    height: 456px;
+}
+
+.recornate-star {
+    position: relative;
+}
+
+.icom-recornate-van {
+    position: absolute;
+    top: 90px;
+    left: 16px;
+    fill: var(--brend-color);
+}
+
+.icom-recornate-tu {
+    position: absolute;
+    top: 400px;
+    right: 340px;
+    fill: var(--color-primary-dark);
+}
+
+.icom-recornate-fre {
+    position: absolute;
+    top: 300px;
+    fill: var(--consent-color);
+}
+.reincarnate-zone {
+    line-height: 64px;
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 100px;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+.transform-text {
+    font-weight: 600;
+}
+.second-text {
+    margin-bottom: 40px;
+    line-height: 1.7;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+}
+.title-tranform {
+    text-transform: capitalize;
+}
+.photo-fece {
+    height: 335px;
+    width: 328px;
+    border-radius: 50%;
+}

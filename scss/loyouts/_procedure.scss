@@ -1,0 +1,67 @@
+.procedure-section {
+    margin-bottom: 96px;
+}
+
+.procedures-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+.formats-coneiner {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-list {
+    display: flex;
+    gap: 16px;
+}
+
+.formats-card {
+    flex-basis: calc(100% - 32px / 3);
+}
+
+.carta-safbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 344px;
+    height: 456px;
+    border-radius: 0 50px 0 50px;
+    background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+    transition: transform 0.3s;
+    overflow: hidden;
+
+}
+
+.carta-safbar:hover {
+    transform: scale(1.05);
+}
+
+.format-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.text-card {
+    color: var(--color-primary-light);
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 400;
+    padding-bottom: 32px;
+    text-align: center;
+    max-width: 152px;
+}
+
+.card-text {
+    display: block;
+}
