@@ -1,13 +1,31 @@
 /* hero */
-.hero-section {
+.hero {
     background-image: url(../images/Gradient.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     padding: 126px 0;
-}
 
-.hero-title {
+&__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 80px;
+    margin: 0 auto;
+    margin-bottom: -30px;
+}
+&__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 24px; */
+}
+&__small {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 48px;
+}
+&__title {
     display: flex;
     flex-direction: column;
     color: var(--brend-color);
@@ -20,32 +38,11 @@
     margin: 10px 0;
     padding-top: 16px;
 }
-
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 48px 80px;
-    margin: 0 auto;
-    margin-bottom: -30px;
-}
-
-.hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* gap: 24px; */
-}
-
-.consent-text {
+&__consul {
     color: var(--consent-color);
     font-size: 12px;
     line-height: 1.5;
     padding-top: 14px;
+    max-width: 238px;
 }
-
-.first-text {
-    font-size: 18px;
-    line-height: 1.5;
-    padding-top: 48px;
 }

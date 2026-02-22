@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header_container">
+          <nav class="header_nav">
             <a href="#">
               <img src="./images/logo.svg" alt="Логотип Beauty Zone " />
             </a>
-            <ul class="header-menu">
+            <ul class="header_menu">
               <li class="menu">
                 <a class="link" href="#reincarnation-section">Про нас</a>
               </li>
@@ -58,110 +58,104 @@
       </div>
     </header>
     <main>
-      <section class="section-title hero-section">
+      <section class="section__title hero">
         <div class="container">
-          <div class="hero-container">
-            <div class="hero-text">
-              <p class="first-text">Косметологічна клініка</p>
-              <h1 class="hero-title" lang="en">
+          <div class="hero__container">
+            <div class="hero__text">
+              <p class="hero__small">Косметологічна клініка</p>
+              <h1 class="hero__title" lang="en">
                 <span>Beauty</span>
                 <span>Zone</span>
               </h1>
               <button class="button modal-btn-open" type="button">
                 Замовити дзвінок
               </button>
-              <p class="consent-text">
+              <p class="hero__consul">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="section-title reincarnation-section"
-        id="reincarnation-section"
-      >
-        <div class="container container-reincarnate">
-          <div class="reincarnate-content">
-            <h2 class="reincarnate-zone">
+      <section class="section-title reincarnation" id="reincarnation-section">
+        <div class="container reincarnation__container">
+          <div class="reincarnation__content">
+            <h2 class="reincarnation__title">
               Перевтілюйтесь в
-              <span class="title-blue title-tranform" lang="en"
+              <span class="title__blue title-tranforms" lang="en"
                 >beauty zone!</span
               >
             </h2>
-            <div class="second-item">
-              <h3 class="second-text">
-                Наша косметологічна клініка пропонує вам професійні послуги з
-                догляду за шкірою обличчя та тіла.
-              </h3>
-            </div>
-            <div class="second-item">
-              <h3 class="second-text">
-                B
-                <span class="title-tranform transform-text" lang="en"
-                  >beauty zone</span
-                >
-                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-                косметологічні процедури та препарати допоможуть вам
-                підтримувати свою красу та молодість. З нами краса назавжди!
-              </h3>
-            </div>
+
+            <h3 class="reincarnation__text--limited">
+              Наша косметологічна клініка пропонує вам професійні послуги з
+              догляду за шкірою обличчя та тіла.
+            </h3>
+            <h3 class="reincarnation__text--limited">
+              B
+              <span class="title-tranform transform-text" lang="en"
+                >beauty zone</span
+              >
+              ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+              косметологічні процедури та препарати допоможуть вам підтримувати
+              свою красу та молодість. З нами краса назавжди!
+            </h3>
           </div>
-          <div class="reincarnate-images">
+          <div class="reincarnation-images">
             <img
-              class="photo-fece"
+              class="reincarnation-images__photo"
               src="./images/do.jpg"
               alt="До відновлення"
             />
             <img
-              class="photo-fece photo-posle"
+              class="reincarnation-images__photo reincarnation-images__after"
               src="./images/pislya.jpg"
               alt="Після відновлення"
             />
           </div>
-          <div class="recornate-star">
-            <svg class="icom-recornate-fre" width="16" height="16">
+          <div class="reincarnation-star">
+            <svg class="reincarnation-star__fre" width="16" height="16">
               <use href="./images/star-icom.svg#icon-Star-van"></use>
             </svg>
-            <svg class="icom-recornate-van" width="40" height="40">
+            <svg class="reincarnation-star__van" width="40" height="40">
               <use href="./images/star-icom.svg#icon-Star-tu"></use>
             </svg>
-            <svg class="icom-recornate-tu" width="64" height="64">
+            <svg class="reincarnation-star__tu" width="64" height="64">
               <use href="./images/star-icom.svg#icon-Star-fre"></use>
             </svg>
           </div>
         </div>
       </section>
       <div class="gradient-section">
-        <section class="section-title choose-section" id="choose-section">
+        <section class="section-title choose" id="choose-section">
           <div class="container">
-            <h2 class="reputation-zona reputation-title">
-              Чому люди <span class="title-blue">обирають нас</span>
+            <h2 class="choose__zona choose__title">
+              Чому люди <span class="title__blue">обирають нас</span>
             </h2>
-            <div class="three-card">
-              <div class="three-text">
-                <svg class="icom-procedure" width="48" height="48">
+            <div class="choose__card">
+              <div class="choose__icom">
+                <svg class="choose__procedure" width="48" height="48">
                   <use href="./images/icom.svg#icon-seti"></use>
                 </svg>
-                <p class="text-icom">
+                <p class="choose__text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
               </div>
-              <div class="three-text">
-                <svg class="icom-procedure" width="48" height="48">
+              <div class="choose__icom">
+                <svg class="choose__procedure" width="48" height="48">
                   <use href="./images/icom.svg#icon-Geli"></use>
                 </svg>
-                <p class="text-icom">
+                <p class="choose__text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
               </div>
-              <div class="three-text">
-                <svg class="icom-procedure" width="48" height="48">
+              <div class="choose__icom">
+                <svg class="choose__procedure" width="48" height="48">
                   <use href="./images/icom.svg#icon-korona"></use>
                 </svg>
-                <p class="text-icom">
+                <p class="choose__text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
                 </p>
@@ -169,47 +163,49 @@
             </div>
           </div>
         </section>
-        <section class="section-title procedure-section" id="procedure-section">
+        <section class="section-title procedure" id="procedure-section">
           <div class="container">
-            <h2 class="procedures-title">
-              Наші <span class="title-blue">процедури</span>
+            <h2 class="procedure__title">
+              Наші <span class="title__blue">процедури</span>
             </h2>
-            <div class="formats-coneiner">
+            <div class="procedure__coneiner">
               <button class="carusel-button" type="button">
                 <svg class="carusel-arrow" width="16" height="16">
                   <use href="./images/icoms.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <ul class="card-list">
-                <li class="formats-card">
-                  <article class="carta-safbar">
+              <ul class="procedure__list">
+                <li class="procedure__card">
+                  <article class="procedure-safbar">
                     <img
-                      class="format-images"
+                      class="procedure-safbar__images"
                       src="./images/maska.jpg"
                       alt="maska"
                     />
-                    <p class="text-card">
-                      <span class="card-text">Маски</span> для обличчя
+                    <p class="procedure-safbar__text">
+                      <span class="procedure-safbar__texts">Маски</span> для
+                      обличчя
                     </p>
                   </article>
                 </li>
-                <li class="formats-card">
-                  <article class="carta-safbar">
+                <li class="procedure-safbar__card">
+                  <article class="procedure-safbar">
                     <img
-                      class="format-images"
+                      class="procedure-safbar__images"
                       src="./images/botoks.jpg"
                       alt="botoks"
                     />
 
-                    <p class="text-card">
-                      <span class="card-text">Ін'єкції</span> для обличчя
+                    <p class="visually-hidden">
+                      <span class="procedure-safbar__texts">Ін'єкції</span> для
+                      обличчя
                     </p>
                   </article>
                 </li>
-                <li class="formats-card">
-                  <article class="carta-safbar">
+                <li class="procedure-safbar__card">
+                  <article class="procedure-safbar">
                     <img
-                      class="format-images"
+                      class="procedure-safbar__images"
                       src="./images/maszh.jpg"
                       alt="masazh"
                     />
@@ -228,12 +224,12 @@
       </div>
       <section class="section-title contact-section" id="contact-section">
         <div class="container">
-          <h2 class="maps-title">
-            Як нас <span class="title-blue">знайти</span>
+          <h2 class="contact-section__title">
+            Як нас <span class="title__blue">знайти</span>
           </h2>
-          <div class="contakt-conteiner">
+          <div class="contact-section__conteiner">
             <iframe
-              class="contakt-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2537.4697953257037!2d30.77535910666776!3d50.50682498546261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMDc0MDA!5e0!3m2!1sru!2sde!4v1769188408795!5m2!1sru!2sde"
               width="605"
               height="481"
@@ -241,60 +237,58 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="contack-gradient">
-              <div class="contakt-forma">
-                <h3 class="info-text-free">
-                  Запишіться <span class="title-blue">безкоштовно</span> та
-                  отримайте подарунок
-                </h3>
-                <form name="contact-form " autocomplete="off">
-                  <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-name"
-                      >Ваше ім'я та прізвище</label
-                    >
-                    <input
-                      class="form-input"
-                      type="text"
-                      name="user-name"
-                      id="user-name"
-                      placeholder="Ваше ім'я та прізвище"
-                    />
-                  </div>
-                  <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-tel"
-                      >Ваш номер телефону</label
-                    >
-                    <input
-                      class="form-input"
-                      type="tel"
-                      name="user-tel"
-                      id="user-tel"
-                      placeholder="Ваш номер телефону"
-                    />
-                  </div>
-                  <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-email"
-                      >Ваша електронна пошта</label
-                    >
-                    <input
-                      class="form-input"
-                      type="emailt"
-                      name="user-email"
-                      id="user-email"
-                      placeholder="Ваша електронна пошт "
-                    />
-                  </div>
-                  <button class="button-modal form-button" type="submit">
-                    Записатись безкоштовно
-                  </button>
-                  <p class="form-terms">
-                    Натискаючи на кнопку я погоджуюсь
-                    <a class="form-link" href="#">
-                      з політикою конфіденційності</a
-                    >
-                  </p>
-                </form>
-              </div>
+            <div class="contact-section__gradient">
+              <h3 class="contact-section__free">
+                Запишіться <span class="title__blue">безкоштовно</span> та
+                отримайте подарунок
+              </h3>
+              <form name="form " autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Ваш номер телефону</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="emailt"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошт "
+                  />
+                </div>
+                <button class="button-modal form-button" type="submit">
+                  Записатись безкоштовно
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-link" href="#">
+                    з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
           </div>
         </div>
@@ -386,7 +380,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2 class="title-modal">Замовити дзвінок</h2>
         <h3 class="info-text-free">
-          Запишіться <span class="title-blue">безкоштовно</span> та отримайте
+          Запишіться <span class="title__blue">безкоштовно</span> та отримайте
           подарунок
         </h3>
         <form name="modal-form " autocomplete="off" novalidate>

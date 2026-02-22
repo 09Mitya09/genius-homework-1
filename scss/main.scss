@@ -1,5 +1,7 @@
 @import './utilis/fonts';
 
+@import './utilis/texts';
+
 @import './utilis/variables';
 
 @import './base';
@@ -22,15 +24,25 @@
 
 @import './loyouts/reincornate';
 
+@import './loyouts/reincarnation-images';
+
+@import './loyouts/reincarnation-star';
+
 @import './loyouts/choose';
 
 @import './loyouts/procedure';
 
-@import './loyouts/\ contact';
+@import './loyouts/procedure-card';
+
+@import './loyouts/contact';
+
+@import './loyouts/contakt-forma';
 
 @import './loyouts/footer';
 
 @import './loyouts/modal';
 
-@import './loyouts/gradient.scss';
+@import './loyouts/modal-contact';
+
+@import './loyouts/gradient';
 

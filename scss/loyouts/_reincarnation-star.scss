@@ -1,0 +1,23 @@
+.reincarnation-star {
+    position: relative;
+    &__fre {
+            position: absolute;
+            top: 300px;
+            fill: var(--consent-color);
+        }
+    
+        &__van {
+            position: absolute;
+            top: 90px;
+            left: 16px;
+            fill: var(--brend-color);
+        }
+    
+        &__tu {
+            position: absolute;
+            top: 400px;
+            right: 340px;
+            fill: var(--color-primary-dark);
+        }
+}
+

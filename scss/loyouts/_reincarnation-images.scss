@@ -1,0 +1,19 @@
+.reincarnation-images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    width: 499px;
+   
+    &__photo {
+            height: 335px;
+            width: 328px;
+            border-radius: 50%;
+        }
+                                  &__after {
+                                      margin-left: 200px;
+                                  }
+}
+
+
+
