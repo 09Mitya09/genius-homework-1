@@ -13,28 +13,42 @@
         }
 
         &_nav {
-            display: flex;
-            align-items: center;
-            flex-grow: 1;
-            gap: 40px;
+display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;   
         }
-                &_menu {
+                &_menu { 
+           display: none;
+
+                    @media screen and (min-width:$bp-desktop) {
                     display: flex;
                     align-items: center;
                     gap: 56px;
                     flex-grow: 1;
                     justify-content: center;
+                   
+                }         
                 }
+                                &_web {
+                                    display: none;
+                                    @media screen and (min-width:$bp-desktop ) {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 32px;
+                                    
+                                }
 }
+&_burger{
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+   right: 20px;
+    fill: var(--color-primary-dark);
 
-
-
-
-
-
-
-.web-nav {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
+}
 }

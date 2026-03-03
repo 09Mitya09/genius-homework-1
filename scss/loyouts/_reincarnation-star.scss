@@ -1,23 +1,50 @@
 .reincarnation-star {
     position: relative;
     &__fre {
-            position: absolute;
-            top: 300px;
-            fill: var(--consent-color);
+        display: none;
+        position: absolute;
+        top: 300px;
+        fill: var(--consent-color);
+           
+    @media screen and (min-width: $bp-desktop) {
+    display: block;
+    position: absolute;
+    top: 300px;
+    fill: var(--consent-color);
+            }
         }
     
-        &__van {
-            position: absolute;
-            top: 90px;
-            left: 16px;
-            fill: var(--brend-color);
+    &__van {  
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 16px;
+    fill: var(--brend-color);
+    @media screen and (min-width: $bp-desktop) {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 16px;
+    fill: var(--brend-color);
+            }
         }
     
         &__tu {
-            position: absolute;
-            top: 400px;
-            right: 340px;
-            fill: var(--color-primary-dark);
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 40px;
+        left: 265px;
+        fill: var(--color-primary-dark);
+
+            @media screen and (min-width: $bp-desktop) {
+                display: block;
+                    position: absolute;
+                        top: 400px;
+                        left: auto;
+                        right: 340px;
+                        fill: var(--color-primary-dark);
+                }
         }
 }
 

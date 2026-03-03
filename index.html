@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -30,7 +34,7 @@
             </ul>
           </nav>
           <div>
-            <ul class="web-nav">
+            <ul class="header_web">
               <li>
                 <a href="#">
                   <svg width="42" height="42">
@@ -53,6 +57,19 @@
                 </a>
               </li>
             </ul>
+            <button class="header_burger menu-btn-open" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icoms.svg#icon-menu "></use>
+              </svg>
+            </button>
+            <div class="mobile-menu">
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                close
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -104,11 +121,13 @@
           <div class="reincarnation-images">
             <img
               class="reincarnation-images__photo"
+              srcset="./images/do.jpg 1x, ./images/do@2x.jpg 2x"
               src="./images/do.jpg"
               alt="До відновлення"
             />
             <img
               class="reincarnation-images__photo reincarnation-images__after"
+              srcset="./images/pislya.jpg 1x, ./images/pislya@2x.jpg 2x"
               src="./images/pislya.jpg"
               alt="Після відновлення"
             />
@@ -168,53 +187,110 @@
             <h2 class="procedure__title">
               Наші <span class="title__blue">процедури</span>
             </h2>
-            <div class="procedure__coneiner">
-              <button class="carusel-button" type="button">
-                <svg class="carusel-arrow" width="16" height="16">
+            <div class="procedure__slider">
+              <button
+                class="procedure__button carousel-button prev"
+                type="button"
+              >
+                <svg class="carousel-arrow" width="16" height="16">
                   <use href="./images/icoms.svg#icon-arrow"></use>
                 </svg>
               </button>
-              <ul class="procedure__list">
-                <li class="procedure__card">
-                  <article class="procedure-safbar">
-                    <img
-                      class="procedure-safbar__images"
-                      src="./images/maska.jpg"
-                      alt="maska"
-                    />
-                    <p class="procedure-safbar__text">
-                      <span class="procedure-safbar__texts">Маски</span> для
-                      обличчя
-                    </p>
-                  </article>
-                </li>
-                <li class="procedure-safbar__card">
-                  <article class="procedure-safbar">
-                    <img
-                      class="procedure-safbar__images"
-                      src="./images/botoks.jpg"
-                      alt="botoks"
-                    />
+              <div class="procedure__container swiper-container">
+                <ul class="procedure__list swiper-wrapper">
+                  <li class="swiper-slide">
+                    <article class="procedure-safbar">
+                      <div class="procedure-safbar__container">
+                        <img
+                          class="procedure-safbar__images"
+                          src="./images/maska.jpg"
+                          alt="maska"
+                        />
+                        <p class="procedure-safbar__text">
+                          <span class="procedure-safbar__texts">Маски</span> для
+                          обличчя
+                        </p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedure-safbar">
+                      <img
+                        class="procedure-safbar__images"
+                        src="./images/botoks.jpg"
+                        alt="botoks"
+                      />
 
-                    <p class="visually-hidden">
-                      <span class="procedure-safbar__texts">Ін'єкції</span> для
-                      обличчя
-                    </p>
-                  </article>
-                </li>
-                <li class="procedure-safbar__card">
-                  <article class="procedure-safbar">
-                    <img
-                      class="procedure-safbar__images"
-                      src="./images/maszh.jpg"
-                      alt="masazh"
-                    />
-                    <h3 class="visually-hidden">Розглажування</h3>
-                  </article>
-                </li>
-              </ul>
-              <button class="carusel-button next" type="button">
-                <svg class="carusel-arrow" width="16" height="16">
+                      <p class="visually-hidden">
+                        <span class="procedure-safbar__texts">Ін'єкції</span>
+                        для обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedure-safbar">
+                      <img
+                        class="procedure-safbar__images"
+                        src="./images/maszh.jpg"
+                        alt="masazh"
+                      />
+                      <h3 class="visually-hidden">Розглажування</h3>
+                    </article>
+                  </li>
+
+                  <li class="swiper-slide">
+                    <article class="procedure-safbar">
+                      <div class="procedure-safbar__container">
+                        <img
+                          class="procedure-safbar__images"
+                          src="./images/maska.jpg"
+                          alt="maska"
+                        />
+                        <p class="procedure-safbar__text">
+                          <span class="procedure-safbar__texts">Маски</span> для
+                          обличчя
+                        </p>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedure-safbar">
+                      <img
+                        class="procedure-safbar__images"
+                        src="./images/botoks.jpg"
+                        alt="botoks"
+                      />
+
+                      <p class="visually-hidden">
+                        <span class="procedure-safbar__texts">Ін'єкції</span>
+                        для обличчя
+                      </p>
+                    </article>
+                  </li>
+                  <li class="swiper-slide">
+                    <article class="procedure-safbar">
+                      <img
+                        class="procedure-safbar__images"
+                        src="./images/maszh.jpg"
+                        alt="masazh"
+                      />
+                      <h3 class="visually-hidden">Розглажування</h3>
+                    </article>
+                  </li>
+                </ul>
+                <div class="pagination">
+                  <span class="pagination__button"></span>
+                  <span class="pagination__button"></span>
+                  <span class="pagination__button"></span>
+                  <span class="pagination__button"></span>
+                </div>
+              </div>
+
+              <button
+                class="procedure__button carousel-button next"
+                type="button"
+              >
+                <svg class="carousel-arrow" width="16" height="16">
                   <use href="./images/icoms.svg#icon-arrow"></use>
                 </svg>
               </button>
@@ -231,11 +307,11 @@
             <iframe
               class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2537.4697953257037!2d30.77535910666776!3d50.50682498546261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMDc0MDA!5e0!3m2!1sru!2sde!4v1769188408795!5m2!1sru!2sde"
-              width="605"
-              height="481"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              width="605px"
+              height="481px"
             ></iframe>
             <div class="contact-section__gradient">
               <h3 class="contact-section__free">
@@ -299,79 +375,89 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img src="./images/logo.svg" alt="Логотип Beauty Zone " />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li class="menu">
-                <a class="white-text" href="#reincarnation-section">Про нас</a>
+                <a class="footer__white-text" href="#reincarnation-section"
+                  >Про нас</a
+                >
               </li>
               <li class="menu">
-                <a class="white-text" href="#choose-section">Чому ми</a>
+                <a class="footer__white-text" href="#choose-section">Чому ми</a>
               </li>
               <li class="menu">
-                <a class="white-text" href="#procedure-section"
+                <a class="footer__white-text" href="#procedure-section"
                   >Наші процедури</a
                 >
               </li>
               <li class="menu">
-                <a class="white-text" href="#contact-section">Контакти</a>
+                <a class="footer__white-text" href="#contact-section"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="white-text" href="tel:+38(096)0000007"
-                  >+38(096)000 00 07</a
-                >
-              </li>
-              <li>
-                <a class="white-text" href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="white-text"
-                  href="https://maps.app.goo.gl/4FpmHggcaxgDM8ta7"
-                  target="_blank"
-                  >Україна,м.Київ,вул.Тараса Шевченка 5</a
-                >
-              </li>
-              <div class="icom">
+          <address class="footer__address">
+            <ul class="footer__address-list">
+              <div class="footer__list">
+                <li>
+                  <a class="footer__white-text" href="tel:+38(096)0000007"
+                    >+38(096)000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__white-text"
+                    href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__white-text"
+                    href="https://maps.app.goo.gl/4FpmHggcaxgDM8ta7"
+                    target="_blank"
+                    >Україна,м.Київ,вул.Тараса Шевченка 5</a
+                  >
+                </li>
+              </div>
+
+              <div class="footer__icom">
                 <li>
                   <a href="#">
-                    <svg class="address-icom" width="42" height="42">
+                    <svg class="footer__address-icom" width="42" height="42">
                       <use href="./images/icoms.svg#icon-phone "></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <svg class="address-icom" width="42" height="42">
+                    <svg class="footer__address-icom" width="42" height="42">
                       <use href="./images/icoms.svg#icon-facbook "></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <svg class="address-icom" width="42" height="42">
+                    <svg class="footer__address-icom" width="42" height="42">
                       <use href="./images/icoms.svg#icon-instogram "></use>
                     </svg>
                   </a>
                 </li>
               </div>
             </ul>
-            <div class="address-info">
-              <a class="white-text" href="#" target="_blank"
+            <div class="footer__address-info">
+              <a class="footer__white-text" href="#" target="_blank"
                 >Політика конфедеційності</a
               >
-              <p class="protection-text">&copy; 2022 Дані захищені</p>
+
+              <p class="footer__protection-text">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
@@ -380,60 +466,66 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
-        <h2 class="title-modal">Замовити дзвінок</h2>
+        <button class="modal__btn-close modal-btn-close" type="button">
+          Close
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
         <h3 class="info-text-free">
           Запишіться <span class="title__blue">безкоштовно</span> та отримайте
           подарунок
         </h3>
         <form name="modal-form " autocomplete="off" novalidate>
-          <div class="form-field-modal">
+          <div class="modal__form-field form">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
             >
             <input
-              class="form-input"
+              class="form__input"
               type="text"
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
             />
           </div>
-          <div class="form-field-modal">
+          <div class="modal__form-field">
             <label class="form-label visually-hidden" for="user-tel"
               >Ваш номер телефону</label
             >
             <input
-              class="form-input"
+              class="form__input"
               type="tel"
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
             />
           </div>
-          <div class="form-field-modal">
+          <div class="modal__form-field">
             <label class="form-label visually-hidden" for="user-email"
               >Ваша електронна пошта</label
             >
             <input
-              class="form-input"
+              class="form__input"
               type="emailt"
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошт "
             />
           </div>
-          <button class="button-modal form-button" type="submit">
+          <button class="button-modal modal__button" type="submit">
             Записатись безкоштовно
           </button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-link" href="#"> з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#">
+              з політикою конфіденційності</a
+            >
           </p>
         </form>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./model.js/formats-slider.js"></script>
+    <script src="/model.js/mobile-menu.js"></script>
     <script src="./model.js/modal.js"></script>
   </body>
 </html>

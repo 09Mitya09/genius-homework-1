@@ -1,60 +1,128 @@
 .contact-section {
-    padding-bottom: 96px;
+    padding-top: 40px;
 
-&__title {
-    font-weight: 700;
-    font-size: 64px;
-    text-align: center;
-    margin-bottom: 48px;
-    color: var(--color-primary-dark);
-}
-&__conteiner {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-}
-&__map {
-    flex-shrink: 0;
-    border: 0;
-    border-radius: 16px;
-}
-&__gradient {
-    position: relative;
-    max-width: 423px;
-    width: 100%;
-    max-height: 481px;
-    height: 100%;
-    color: var(--color-primary-light);
-    background-color: var(--color-primary-dark);
-    border-radius: 48px;
-    background-image: url(../images/background-modal.png);
-    overflow-y: auto;
-    padding: 45px 57px;
-}
+    @media screen and (min-width: $bp-tablet) {
+        padding-bottom: 96px;
+    }
 
-&__free {
-    line-height: 1.3;
-    color: var(--color-primary-light);
-    margin: 0 auto;
-    max-width: 300px;
-    font-weight: 600;
-    font-size: 22px;
-    text-align: center;
-    margin-bottom: 32px;
-}
-&__form-field {
-    margin-bottom: 16px;
-}
-&__button {
-    display: block;
-    margin: 0 auto;
-    font-weight: 600;
-    margin-bottom: 8px;
-    width: 281px;
-    height: 53px;
-}
-}
+ &__title {
+     font-weight: 700;
+     font-size: 64px;
+     text-align: center;
+     margin-bottom: 48px;
+     color: var(--color-primary-dark);
 
+ }
+        &__conteiner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 32px;
+    
+            @media screen and (min-width: $bp-tablet) {
+                flex-direction: row;
+                gap: 24px;
+                padding: 20px;
+    
+            }
+}
+           &__map {
+               flex-shrink: 0;
+               border: 0;
+               border-radius: 16px;
+               width: 100%;
+               height: 100%;
+               order: 2;
+    
+               @media screen and (min-width: $bp-tablet) {
+                   margin: auto;
+                   width: 360px;
+                   height: 500px;
+                   gap: 15px;
+    
+               }
+                                   @media screen and (min-width: $bp-desktop) {
+                                       width: 605px;
+                                       height: 481px;
+                                       gap: 24px;
+                                       order: 1;
+                                   }
+
+    }
+
+        
+ &__gradient {
+     position: relative;
+     max-width: 423px;
+     width: 100%;
+     max-height: 481px;
+     height: 100%;
+     color: var(--color-primary-light);
+     background-color: var(--color-primary-dark);
+     border-radius: 48px;
+     background-image: url(../images/background-modal.png);
+     overflow-y: auto;
+     padding: 45px 57px;
+     order: 1;
+
+     @media screen and (min-width: $bp-desktop) {
+         position: relative;
+         max-width: 423px;
+         width: 100%;
+         max-height: 481px;
+         height: 100%;
+         color: var(--color-primary-light);
+         background-color: var(--color-primary-dark);
+         border-radius: 48px;
+         background-image: url(../images/background-modal.png);
+         overflow-y: auto;
+         padding: 45px 57px;
+         order: 2;
+     }
+    
+    }
+          &__free {
+              line-height: 1.3;
+              color: var(--color-primary-light);
+              margin: 0 auto;
+              max-width: 300px;
+              font-weight: 600;
+              font-size: 22px;
+              text-align: center;
+              margin-bottom: 32px;
+    
+          }
+    
+          &__form-field {
+              margin-bottom: 16px;
+          }
+                        &__button {
+                            display: block;
+                            justify-content: center;
+                            margin: 0 auto;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                            width: 281px;
+                            height: 53px;
+            
+                            @media screen and (min-width: $bp-desktop) {
+                                display: block;
+                                margin: 0 auto;
+                                font-weight: 600;
+                                margin-bottom: 8px;
+                                width: 281px;
+                                height: 53px;
+                            }
+                        }
+        
+        }
+
+   
+  
+  
+
+
+        
 
 /* .contakt-forma {
 position: relative;

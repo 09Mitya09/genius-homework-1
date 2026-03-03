@@ -1,5 +1,5 @@
 /* Carusel */
-.carusel-button {
+.carousel-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,20 +10,20 @@
     border: 1px solid var(--color-primary-dark);
     cursor: pointer;
     flex-shrink: 0;
-}
 
-.carusel-button:hover {
+
+&:hover {
     background-color: var(--brend-color);
     stroke: var(--brend-color);
 }
+&.next {
+    transform: rotate(180deg);
+}
 
-.carusel-button:hover .carusel-arrow {
+&:hover .carusel-arrow {
     fill: var(--color-primary-light);
 }
-
-.carusel-arrow {
-    fill: var(--color-primary-dark);
 }
-.carusel-button.next {
-    transform: rotate(180deg);
+.carousel-arrow {
+    fill: var(--color-primary-dark);
 }
