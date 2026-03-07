@@ -21,6 +21,10 @@ display: flex;
                 &_menu { 
            display: none;
 
+        @media screen and (min-width:$bp-tablet) {
+            display: none;
+        }
+
                     @media screen and (min-width:$bp-desktop) {
                     display: flex;
                     align-items: center;
@@ -32,6 +36,11 @@ display: flex;
                 }
                                 &_web {
                                     display: none;
+
+                                    @media screen and (min-width:$bp-tablet ) {
+                                    display: none;
+                                    }
+
                                     @media screen and (min-width:$bp-desktop ) {
                                     display: flex;
                                     align-items: center;
@@ -45,7 +54,16 @@ display: flex;
     width: 24px;
     height: 24px;
    right: 20px;
-    fill: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: $bp-tablet) {
+background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    right: 20px;
+    fill: var(--color-primary-light);
+    }
 
     @media screen and (min-width: $bp-desktop) {
         display: none;
