@@ -1,31 +1,20 @@
 /* hero */
 .hero {
-width: 100%;
-height: 100%;
+
 background-image: url(../images/Gradient.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
-    margin: auto;
+    padding: 65px 0;
+
 
     @media screen and (min-width: $bp-tablet) {
-    width: 100%;
-        height: 100%;
-        background-image: url(../images/Gradient.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: center;
-        margin: auto;
+    
     }
   
     @media screen and (min-width: $bp-desktop){
-    background-image: url(../images/Gradient.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    padding: 126px 0;
+    padding: 205px 0;
 }
 
 &__container {
@@ -33,19 +22,14 @@ display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: -30px;
+
 
     @media screen and (min-width: $bp-tablet) {
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        margin-bottom: -30px;
+    
     }
 
     @media screen and (min-width: $bp-desktop) {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 48px 80px;
     margin: 0 auto;
@@ -57,52 +41,41 @@ display: flex;
     align-items: center;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        text-align: center;
+        width: 100%;
         margin: 0 auto;
        
 
         @media screen and (min-width: $bp-tablet) {
-        display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 90%;
+
         }
 
     @media screen and (min-width: $bp-desktop) {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    /* gap: 24px; */
+    
 }
 }
 &__small {
     text-align: center;
-    padding-top: 71px;
 font-size: 12px;
     line-height: 1.5;
+    margin: 0;
 
     @media screen and (min-width: $bp-tablet) {
-    text-align: center;
-    padding-top: 71px;
-    font-size: 12px;
-    line-height: 1.5;
     }
 
     @media screen and (min-width: $bp-desktop) {
     display: contents;
     font-size: 18px;
-    line-height: 1.5;
-    padding-top: 48px;
-    margin: 0 auto;
+    margin-bottom: 16px;
+    text-align: left;
     }
 }
 &__title {
+    display: flex;
     flex-direction: row;
     text-align: center;
     color: var(--brend-color);
-    font-family: 'Play', sans-serif;
     font-size: 54px;
     font-weight: 700;
     line-height: 0.8;
@@ -110,31 +83,24 @@ font-size: 12px;
     padding-top: 2px;
     padding-bottom: 32px;
     margin: 0 auto;
+    // white-space: nowrap;
+    
 
     @media screen and (min-width: $bp-tablet) {
-        text-align: center;
-    color: var(--brend-color);
-        font-family: 'Play', sans-serif;
-        font-size: 54px;
-        font-weight: 700;
-        line-height: 0.8;
-        margin: 10px auto;
-        padding-top: 2px;
+    
     }
     
     @media screen and (min-width: $bp-desktop) {
-    display: flex;
+    font-family: 'Play', sans-serif;
+    margin-bottom: 40px;
+    font-size: 140px;
+    text-align: left;
     align-items: flex-start;
     flex-direction: column;
-    color: var(--brend-color);
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    font-weight: 700;
-    margin-top: 53px;
-    margin-left: 212px;
+     margin-left: 212px;
     line-height: 0.8;
-    margin: 10px 0;
-    padding-top: 16px;
+     margin: 0;
+     max-width: 529px;
     }
 }
 &__consul {
@@ -143,6 +109,8 @@ padding-top: 8px;
 font-size: 11px;
 max-width: 186px;
 margin: 0 auto;
+line-height: 1.5;
+color: var(--consent-color);
 
 @media screen and (min-width: $bp-tablet) {
 text-align: center;
@@ -153,12 +121,9 @@ margin: 0 auto;
 }
 
     @media screen and (min-width: $bp-desktop) {
-   display: contents;
-    color: var(--consent-color);
     font-size: 12px;
-    line-height: 1.5;
-    padding-top: 14px;
     max-width: 238px;
+    margin: 0;
     }
 }
 }

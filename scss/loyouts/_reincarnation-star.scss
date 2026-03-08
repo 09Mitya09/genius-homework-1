@@ -5,6 +5,13 @@
         position: absolute;
         top: 300px;
         fill: var(--consent-color);
+
+        @media screen and (min-width: $bp-tablet) {
+            display: none;
+                position: absolute;
+                top: 300px;
+                fill: var(--consent-color);
+        }
            
     @media screen and (min-width: $bp-desktop) {
     display: block;
@@ -32,10 +39,15 @@
         &__tu {
         display: block;
         position: absolute;
-        top: 100px;
-        right: 40px;
-        left: 265px;
+        top: 130px;
+        right: 70px;
+        left: 235px;
+        margin: 0 auto;
         fill: var(--color-primary-dark);
+
+        @media screen and (min-width: $bp-tablet) {
+           
+        }
 
             @media screen and (min-width: $bp-desktop) {
                 display: block;
