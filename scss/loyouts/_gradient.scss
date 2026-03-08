@@ -1,7 +1,12 @@
 .gradient-section {
     background-image: url(../images/background-gradient-section.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: scroll;
     padding-top: 176px;
+    background-position: center;
+
+    @media screen and (min-width: $bp-desktop) {
+        background-size: 100% 100%;
+    }
 }
