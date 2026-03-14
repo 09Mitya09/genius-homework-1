@@ -10,6 +10,7 @@
     background-image: url(../images/background-modal.png);
     padding: 4px 48px;
     overflow-y: auto;
+    margin: 8px;
     @media screen and (min-width: $bp-desktop) {
         position: relative;
             max-width: 723px;
@@ -24,11 +25,16 @@
             overflow-y: auto;
     }
 &__btn-close {
-        position: absolute;
+    position: absolute;
+    top: 25px;
+        right: 25px;
+    
+        @media screen and (min-width: $bp-desktop) {
+       
         top: 42px;
         right: 42px;
     }
-    
+}
                 &__title {
                     text-align: center;
                     font-weight: 700;
@@ -50,7 +56,7 @@
                                       margin: 0 auto;
                                       font-weight: 600;
                                       margin-bottom: 8px;
-                                      width: 281px;
+                                      max-width: 281px;
                                       height: 53px;
                                  }
 }

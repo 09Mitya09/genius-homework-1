@@ -54,12 +54,14 @@ color: var(--color-primary-dark);
 }
 
 .button-modal {
+    display: block;
     padding: 16px 32px;
     color: var(--color-primary-light);
     background-color: var(--brend-color);
     border-radius: 32px;
     border: 2px solid var(--brend-color);
     font-weight: 600;
+    margin: 0 auto;
     cursor: pointer;
 }
 
