@@ -18,8 +18,21 @@ display: flex;
     }
     }
     &__btn-close{
-        position: absolute;
-        top: 16px;
-        right: 20px;
+                position: absolute;
+                top: 16px;
+                right: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                fill: transparent;
+                stroke: var(--color-primary-dark);
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            
+        // position: absolute;
+        // top: 16px;
+        // right: 20px;
     }
 }

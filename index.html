@@ -67,7 +67,9 @@
                 class="mobile-menu__btn-close menu-btn-close"
                 type="button"
               >
-                close
+                <svg width="24" height="24">
+                  <use href="./images/close.svg#icon-close"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -310,7 +312,9 @@
             ></iframe>
             <div class="contact-section__gradient">
               <h3 class="contact-section__free">
-                Запишіться <span class="title__blue">безкоштовно</span>
+                <span class="contact-section__no-wrap"
+                  >Запишіться <span class="title__blue">безкоштовно</span></span
+                >
                 та отримайте подарунок
               </h3>
               <form name="form " autocomplete="off">
@@ -462,12 +466,16 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+          <svg width="24" height="24">
+            <use href="./images/close.svg#icon-close"></use>
+          </svg>
         </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
         <h3 class="info-text-free">
-          Запишіться <span class="title__blue">безкоштовно</span> та отримайте
-          подарунок
+          <span class="modal__now-wrap"
+            >Запишіться <span class="title__blue">безкоштовно</span></span
+          >
+          <span class="modal__now-wrap">та отримайте подарунок</span>
         </h3>
         <form name="modal-form " autocomplete="off" novalidate>
           <div class="modal__form-field form">

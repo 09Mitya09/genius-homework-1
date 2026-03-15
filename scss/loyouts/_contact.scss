@@ -42,7 +42,7 @@
                flex-shrink: 0;
                border: 0;
                border-radius: 16px;
-               width: 100%;
+               width: calc(100% + 48px);
                height: 232px;
                order: 2;
                margin: 0 -24px ;
@@ -102,12 +102,14 @@
               text-align: center;
               margin-bottom: 24px;
               
-
     @media screen and (min-width: $bp-desktop) {
         max-width: 274px;
         margin-bottom: 32px;
     }
-}   
+}  
+&__no-wrap{
+    white-space: nowrap;
+}
         
                         &__button {
                             display: block;
@@ -138,7 +140,7 @@
     &__form-field{
         display: flex;
             justify-content: center;
-        padding: 16px;
+       margin-bottom: 13px;
     }
     }
    
