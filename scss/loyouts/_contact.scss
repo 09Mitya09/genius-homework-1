@@ -1,5 +1,4 @@
 .contact-section {
-    padding-top: 40px;
 
     @media screen and (min-width: $bp-tablet) {
         padding-bottom: 96px;
@@ -29,11 +28,11 @@
             @media screen and (min-width: $bp-tablet) {
             flex-direction: row;
                 gap: 24px;
-                padding: 20px;
+                padding:0 20px;
             }
                          @media screen and (min-width: $bp-desktop) {
                             flex-direction: row;
-                                gap: 32px;
+                                
                                 
                          }
 }
@@ -50,10 +49,12 @@
                
     
                @media screen and (min-width: $bp-tablet) {
-                   margin: auto;
-                   width: 361px;
-                   height: 481px;
+                   margin:0 auto;
+                   width: 50%;
+                   height: 434px;
                    gap: 15px;
+                   -webkit-box-ordinal-group: 2;
+                   -ms-flex-order: 1;
                    order: 1;
     
                }

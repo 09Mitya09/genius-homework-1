@@ -1,5 +1,6 @@
 .reincarnation-star {
     position: relative;
+    
     &__fre {
         display: none;
         position: absolute;
@@ -7,31 +8,27 @@
         fill: var(--consent-color);
 
         @media screen and (min-width: $bp-tablet) {
-            display: none;
-                position: absolute;
-                top: 300px;
-                fill: var(--consent-color);
+
         }
            
     @media screen and (min-width: $bp-desktop) {
     display: block;
     position: absolute;
     top: 300px;
+    right: 10px;
     fill: var(--consent-color);
             }
         }
     
     &__van {  
     display: none;
-    position: absolute;
-    top: 90px;
-    left: 16px;
+   
     fill: var(--brend-color);
     @media screen and (min-width: $bp-desktop) {
     display: block;
     position: absolute;
     top: 90px;
-    left: 16px;
+    right: 0;
     fill: var(--brend-color);
             }
         }

@@ -2,38 +2,43 @@
     &__container {
             display: block;
             margin-bottom: 104px;
+          
            
 
         @media screen and (min-width: $bp-tablet) {
         display: block;
-        
-                margin-bottom: 104px;
         }
 
             @media screen and (min-width: $bp-desktop) {
 
                 display: flex;
+                flex: 1;
+                width: 100%;
+                max-width: 1240px;
                 justify-content: space-between;
                 align-items: flex-start;
                 gap: 32px;
                 margin-bottom: 176px;
+                position: relative;
+                padding-right: 20px;
+                
+                        
                 }
         }
     
         &__content {
-            width: 320px;
-            height: 347px;
+            max-width: 320px;
+            max-height: 347px;
         margin: 0 auto;
 
 @media screen and (min-width: $bp-tablet) {
-width: 320px;
-        height: 347px;
-        margin: 0 auto;
+
 }
 
             @media screen and (min-width: $bp-desktop) {
-                    width: 709px;
-                        height: 456px;
+                    max-width: 709px;
+                        max-height: 456px;
+                       
                 }
         }
     

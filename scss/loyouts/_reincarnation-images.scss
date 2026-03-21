@@ -10,11 +10,12 @@ display: none;
     flex-direction: column;
     gap: 40px;
     margin-top: 50px;
+    margin-right: 20px;
     width: 499px;
    
     &__photo {
-            height: 335px;
-            width: 328px;
+            max-height: 335px;
+            max-width: 328px;
             border-radius: 50%;
         }
                                   &__after {
