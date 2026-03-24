@@ -1,6 +1,6 @@
 
 .footer {
-    background-image: url(../images/background.png);
+    background-image: url(/images/background.png);
     padding: 32px 0;
     background-color: var(--color-primary-dark);
     position: relative;
@@ -8,142 +8,205 @@
         padding: 56px 0;
     }
 
-&::after {
+// &::after {
  
-    @media screen and (min-width: $bp-desktop) {
-position: absolute;
-    background-image: url(../images/maslo-efirne.png);
-    width: 217px;
-    height: 152px;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    content: "";
-    }
-}
-
-&__container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    @media screen and (min-width: $bp-desktop) {
-flex-direction: row;
-
-    }
-}
-
-
- &__nav,
- &__address{
-     display: flex;
-     text-align: center;
-         flex-direction: column;
-         flex-basis: 50%;
-         flex-grow: 0;
-         gap: 16px;
-         font-style: normal;
-
-     @media screen and (min-width: $bp-desktop){
-         flex-direction: row;
-         flex-basis: 50%;
-     }
- }
- &__list{
-display: none;
-    @media screen and (min-width: $bp-desktop) {
-        display: block;
-    }
- }
-&__logo,
-&__menu {
-   
-    flex-grow: 1;
-    
-}
-&__address-list,
-&__address-info { 
-   
-    flex-grow: 1;
-    
-}
-&__white-text {
-font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    text-decoration: none;
-    color: var(--color-primary-light);
-
-    @media screen and (min-width: $bp-desktop) {
-
-    }
-}
-
-&__white-text:hover {
-    color: var(--brend-color);
-}
-&__white-texts {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    text-decoration: none;
-    color: var(--color-primary-light);
-    order: 1;
-
-    @media screen and (min-width: $bp-desktop) {}
-}
-
-&__white-texts:hover {
-    color: var(--brend-color);
-}
-&__protection-text {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.6;
-    text-decoration: none;
-    color: var(--consent-color);
-}
-
-&__icom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-        padding-top: 16px;
-        gap: 24px;
-        order: 2;
-    
-
-    @media screen and (min-width: $bp-desktop) {
-display: flex;
-flex-direction: row;
-    padding-top: 16px;
-    gap: 24px;
-    
-
-    }
-}
-// &__mobil{
-//     display: flex;
-// flex-direction: row;
-//     justify-content: center;
-//     gap: 20px;
-
-//     @media screen and (min-width: $bp-tablet) {
-// display: flex;
-// flex-direction: row;
-//     justify-content: center;
-//     gap: 24px;
+//     @media screen and (min-width: $bp-desktop) {
+// position: absolute;
+//     background-image: url(/images/maslo-efirne.png);
+//     width: 217px;
+//     height: 152px;
+//     right: 0;
+//     bottom: 0;
+//     background-repeat: no-repeat;
+//     content: "";
 //     }
 // }
 
-&__address-icom {
-    fill: var(--color-primary-light);
+// &__container {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 16px;
+
+//     @media screen and (min-width: $bp-desktop) {
+// flex-direction: row;
+
+//     }
+// }
+
+//  &__nav,
+//  &__address{
+//      display: flex;
+//      text-align: center;
+//          flex-direction: column;
+//          flex-basis: 50%;
+//          flex-grow: 0;
+//          gap: 16px;
+//          font-style: normal;
+
+//      @media screen and (min-width: $bp-desktop){
+//          flex-direction: row;
+//          flex-basis: 50%;
+//      }
+//  }
+//  &__list{
+// display: none;
+//     @media screen and (min-width: $bp-desktop) {
+//         display: block;
+//     }
+//  }
+// &__logo,
+// &__menu {
+   
+//     flex-grow: 1;
+    
+// }
+// &__address-list,
+// &__address-info { 
+   
+//     flex-grow: 1;
+    
+// }
+// &__white-text {
+// font-size: 16px;
+//     font-weight: 400;
+//     line-height: 1.6;
+//     text-decoration: none;
+//     color: var(--color-primary-light);
+
+//     @media screen and (min-width: $bp-desktop) {
+
+//     }
+// }
+
+// &__white-text:hover {
+//     color: var(--brend-color);
+// }
+// &__white-texts {
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 1.6;
+//     text-decoration: none;
+//     color: var(--color-primary-light);
+//     order: 1;
+
+//     @media screen and (min-width: $bp-desktop) {}
+// }
+
+// &__white-texts:hover {
+//     color: var(--brend-color);
+// }
+// &__protection-text {
+//     font-size: 15px;
+//     font-weight: 400;
+//     line-height: 1.6;
+//     text-decoration: none;
+//     color: var(--consent-color);
+// }
+
+// &__icom {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//         padding-top: 16px;
+//         gap: 24px;
+//         order: 2;
+    
+
+//     @media screen and (min-width: $bp-desktop) {
+// display: flex;
+// flex-direction: row;
+//     padding-top: 16px;
+//     gap: 24px;
+    
+
+//     }
+// }
+
+// &__address-icom {
+//     fill: var(--color-primary-light);
+// }
+
+// &__address-icom :hover {
+//     fill: var(--brend-color);
+// }
+// }
+
+
+//  &__container {
+//     display: grid;
+//     gap: 16px;
+//     grid-template-areas: 
+//     'logo'
+//     'nav'
+//     'list'
+//     'icom'
+//     'info'
+//     ;
+//  }
+//  &__logo{
+//     grid-area: logo;
+//  }
+//     &__container > :nth-child(2) {
+// grid-area: nav;
+//  }
+//          &__container> :nth-child(3) {
+//              grid-area: list;
+//          }
+//          &__address-icom{
+//             grid-area: icom;
+//          }
+//                          &__container> :nth-child(4) {
+//                              display: contents;
+//                          }
+
+
+&__container {
+    display: grid;
+grid-template-rows: repeat(5);
+     justify-items: center; 
+      row-gap: 16px;
+    grid-template-areas:
+        'logo'
+        'navigation'
+        'confederation'
+        'icom'
+        'protection';
+
+}
+&__logo {
+    grid-area: logo;
 }
 
-&__address-icom :hover {
-    fill: var(--brend-color);
+&__container > .navigation:nth-child(2) {
+    grid-area: navigation;
 }
+&__info {
+    display: contents;
+}
+&__address > .confederation:nth-child(3) {
+display:contents;
+}
+&__address>.confederation:nth-child(3) a {
+    grid-area: confederation;
+}
+
+&__icom > .icom:nth-child(4) {
+    grid-area: icom;
+}
+&__protection{
+    grid-area: protection;
 }
 
 
- 
+@media screen and (min-width: $br-desktop) {
+    &__container {
+        display: flex;
+        text-align: left;
+    }
+
+    &__container>div:nth-child(3),
+    &__container>div:nth-child(4) {
+        display: block;
+    }
+}
+}
