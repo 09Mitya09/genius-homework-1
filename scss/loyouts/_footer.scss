@@ -1,12 +1,12 @@
 
-.footer {
-    background-image: url(/images/background.png);
-    padding: 32px 0;
-    background-color: var(--color-primary-dark);
-    position: relative;
-    @media screen and (min-width: $bp-desktop) {
-        padding: 56px 0;
-    }
+// .footer {
+//     background-image: url(/images/background.png);
+//     padding: 32px 0;
+//     background-color: var(--color-primary-dark);
+//     position: relative;
+//     @media screen and (min-width: $bp-desktop) {
+//         padding: 56px 0;
+//     }
 
 // &::after {
  
@@ -160,53 +160,177 @@
 //                          }
 
 
-&__container {
-    display: grid;
-grid-template-rows: repeat(5);
-     justify-items: center; 
-      row-gap: 16px;
-    grid-template-areas:
-        'logo'
-        'navigation'
-        'confederation'
-        'icom'
-        'protection';
+.footer {
+    position: relative;
+    background-color: var(--color-primary-dark);
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 32px 0 66px;
 
-}
-&__logo {
-    grid-area: logo;
-}
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('/images/background.png');
+    }
 
-&__container > .navigation:nth-child(2) {
-    grid-area: navigation;
-}
-&__info {
-    display: contents;
-}
-&__address > .confederation:nth-child(3) {
-display:contents;
-}
-&__address>.confederation:nth-child(3) a {
-    grid-area: confederation;
-}
+    @media screen and (min-width: $bp-desktop) {
+        background-image: url('/images/background.png');
+        padding: 56px 0;
 
-&__icom > .icom:nth-child(4) {
-    grid-area: icom;
-}
-&__protection{
-    grid-area: protection;
-}
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('/images/background.png');
+        }
+    }
 
+    &::after {
+        @media screen and (min-width: $bp-desktop) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 246px;
+            height: 152px;
+            background-image: url('/images/maslo-efirne.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
 
-@media screen and (min-width: $br-desktop) {
+            @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                width: 246px;
+                height: 152px;
+                background-image: url('/images/maslo-efirne.png');
+                content: '';
+            }
+        }
+    }
+
     &__container {
         display: flex;
-        text-align: left;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
     }
 
-    &__container>div:nth-child(3),
-    &__container>div:nth-child(4) {
-        display: block;
+    &__logo-container {
+        margin-bottom: 42px;
     }
-}
+
+    &__logo {
+        width: 57px;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 83px;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        color: var(--color-primary-light);
+        font-size: 14px;
+        line-height: 1.14;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 16px;
+            line-height: 1.19;
+        }
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+        fill: var(--color-primary-light);
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 42px;
+            height: 42px;
+            fill: var(--color-primary-light);
+        }
+    }
+
+    &__menu,
+    &__address-section,
+    &__address-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        @media screen and (min-width: $bp-desktop) {
+            align-items: flex-start;
+        }
+    }
+
+    &__address {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
+
+    &__address-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        @media screen and (min-width: $bp-desktop) {
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+
+    &__address-social {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+        }
+    }
+
+    &__policy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__address-copyright {
+        color: var(--consent-color);
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 13px;
+            line-height: 1.15;
+        }
+    }
 }
