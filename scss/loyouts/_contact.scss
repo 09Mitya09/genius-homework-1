@@ -49,10 +49,9 @@
                
     
                @media screen and (min-width: $bp-tablet) {
-                   margin:0 auto;
                    width: 50%;
                    height: 434px;
-                   gap: 15px;
+                  margin: 0;
                    -webkit-box-ordinal-group: 2;
                    -ms-flex-order: 1;
                    order: 1;
@@ -61,8 +60,10 @@
                                    @media screen and (min-width: $bp-desktop) {
                                        width: 605px;
                                        height: 481px;
-                                       gap: 24px;
-                                       order: 1;
+                                    -webkit-box-ordinal-group: 2;
+                                        -ms-flex-order: 1;
+                                        order: 1;
+                                        margin: 0;
                                    }
 
     }

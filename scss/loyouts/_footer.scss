@@ -163,7 +163,7 @@
 .footer {
     position: relative;
     background-color: var(--color-primary-dark);
-    background-image: url('/images/background.png');
+    background-image: url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,17 +172,17 @@
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url('/images/background.png');
+        background-image: url('../images/background.png');
     }
 
     @media screen and (min-width: $bp-desktop) {
-        background-image: url('/images/background.png');
+        background-image: url('../images/background.png');
         padding: 56px 0;
 
         @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('/images/background.png');
+            background-image: url('../images/background.png');
         }
     }
 
@@ -193,7 +193,7 @@
             right: 0;
             width: 246px;
             height: 152px;
-            background-image: url('/images/maslo-efirne.png');
+            background-image: url('../images/maslo-efirne.png');
             background-repeat: no-repeat;
             background-size: contain;
             content: '';
@@ -203,7 +203,7 @@
             (min-resolution: 2dppx) {
                 width: 246px;
                 height: 152px;
-                background-image: url('/images/maslo-efirne.png');
+                background-image: url('../images/maslo-efirne.png');
                 content: '';
             }
         }
@@ -259,6 +259,7 @@
             width: 42px;
             height: 42px;
             fill: var(--color-primary-light);
+       
         }
     }
 
@@ -280,6 +281,7 @@
 
         @media screen and (min-width: $bp-desktop) {
             display: block;
+            font-style: normal;
         }
     }
 
